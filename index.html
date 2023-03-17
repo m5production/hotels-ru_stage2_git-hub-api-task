@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="search-field">
+    <form action="https://api.github.com/search/repositories">
+      <input type="text" minlength="2" name="q">
+      <input type="submit">
+    </form>
+  </div>
+
+  <div class="found-items-list"></div>
+  <template id="list-item-template">
+    <div class="found-item">
+      <span class="repo-name-text">Название репозитория:</span>
+      <a class="found-item_repoName" target="_blank" href="#">Название репозитория(ссылка)</a>
+      <div>
+        <span class="repo-owner-name">Имя владельца репозитория:</span>&nbsp;
+        <span class="field-1">свойство1</span>
+      </div>
+
+      <div>
+        <span class="repo-id-text">Id репозитория:</span>&nbsp;
+        <span class="field-2">свойство2</span>
+      </div>
+    </div>
+  </template>
+  <script src="./index.js"></script>
+</body>
+
+</html>

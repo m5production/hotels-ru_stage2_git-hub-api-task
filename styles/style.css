@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 20px;
+  min-height: 100vh;
+}
+
+.search-field {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #ccc;
+}
+
+.found-items-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.found-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: bisque;
+}
+
+.nothing-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */
